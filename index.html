@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindQuest - Your Emotional RPG Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MindQuest</h1>
+        <p>Transform your emotional growth into an RPG-style adventure</p>
+    </header>
+    <main>
+        <section id="world">
+            <h2>Your World</h2>
+            <div id="world-display">
+                <!-- World visualization will be updated by JS -->
+                <div id="character">🧙‍♂️</div>
+                <div id="environment">🌳🌸🌞</div>
+            </div>
+            <div id="progress">
+                <p>Level: <span id="level">1</span></p>
+                <p>Days Active: <span id="days-active">0</span></p>
+                <p>World Brightness: <span id="brightness">50%</span></p>
+            </div>
+        </section>
+        <section id="activities">
+            <h2>Daily Mindfulness Quests</h2>
+            <button id="meditate">3-Minute Meditation</button>
+            <button id="journal">Write 1 Gratitude Note</button>
+            <button id="gratitude">Practice Gratitude</button>
+            <button id="reflect">Reflect on Your Mood</button>
+        </section>
+        <section id="emotion-tracker">
+            <h2>Emotion Tracker</h2>
+            <div id="mood-selection">
+                <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn" data-mood="stressed">😰 Stressed</button>
+                <button class="mood-btn" data-mood="calm">😌 Calm</button>
+                <button class="mood-btn" data-mood="excited">🤩 Excited</button>
+            </div>
+            <div id="weather-display">
+                <p>Today's Weather: <span id="current-weather">Sunny</span></p>
+                <div id="weather-icon">🌞</div>
+            </div>
+        </section>
+        <section id="avatar-growth">
+            <h2>Avatar Growth</h2>
+            <div id="avatar-display">
+                <div id="avatar">🧙‍♂️</div>
+                <p>Consistency Streak: <span id="streak">0</span> days</p>
+            </div>
+        </section>
+        <section id="story-mode">
+            <h2>Story Mode</h2>
+            <div id="story-unlock">
+                <p id="story-narrative">Unlock calming narratives as you improve your emotional score.</p>
+                <button id="unlock-story">Unlock Next Story</button>
+            </div>
+        </section>
+        <section id="ai-buddy">
+            <h2>AI Reflection Buddy</h2>
+            <div id="chat-container">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Share your thoughts...">
+                <button id="send-chat">Send</button>
+            </div>
+        </section>
+        <section id="music-hub">
+            <h2>Music & Meditation Hub</h2>
+            <div id="audio-controls">
+                <button id="play-ambient">Play Ambient Forest</button>
+                <button id="play-meditation">Guided Meditation</button>
+                <button id="play-mood">Mood-Based Playlist</button>
+                <audio id="audio-player" controls style="display:none;"></audio>
+            </div>
+        </section>
+        <section id="social-circles">
+            <h2>Social Circles</h2>
+            <div id="social-share">
+                <textarea id="gratitude-share" placeholder="Share your gratitude..."></textarea>
+                <button id="share-gratitude">Share with Circle</button>
+                <div id="shared-posts"></div>
+            </div>
+        </section>
+        <section id="story">
+            <h2>Your Story</h2>
+            <p id="story-text">Welcome to MindQuest! Start your journey by completing activities to grow your world.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
